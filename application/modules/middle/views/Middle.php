@@ -5,7 +5,7 @@
         <input  type="submit" class="btn btn-primary" value="开始抢答" id="start_rush" name="start_rush" />    
         
         <div class="panel panel-success">
-            <div class="panel-heading">各组情况</div>
+            <div class="panel-heading">各组得分</div>
                 <div class="list-group">
                     <?php foreach($teams as $team): ?>
                         <a class="list-group-item team" href="#" id="<?php echo $team['userid'];?>">

@@ -7,6 +7,12 @@ $("#btn_submit").click(function(){
     $('#main').hide(); 
     $('#hid_userid').val($('#userid').val());
 })
+$("#btn_rush").click(function(){
+    $("#msg").hide();
+    $('#qd').show();
+    $('#main').hide(); 
+    $('#hid_userid').val($('#userid').val());
+})
 
 function showResult(result){
     if(result){

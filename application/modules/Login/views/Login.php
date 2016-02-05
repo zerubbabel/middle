@@ -32,7 +32,7 @@
 <div class="row" id="qd" style="display:none">
   <form class="form-horizontal" role="form" rel="async" action="login/login_ajax/rush">  
     <div class="text-center">
-      <button type="submit" class="btn btn-primary btn-block btn-lg">抢答</button>
+      <button type="submit" class="btn btn-primary btn-block btn-lg" id="btn_rush">抢答</button>
       <!--<img class="img-circle" type="submit" src="<?php //echo assets_url('img/btn.jpg'); ?>" alt=".img-circle">-->
     </div>  
     <input type="hidden" id="hid_userid" name="userid" />
