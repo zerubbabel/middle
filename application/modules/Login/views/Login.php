@@ -33,7 +33,7 @@
   <form class="form-horizontal" role="form" rel="async" action="login/login_ajax/rush">  
     <div class="text-center">
       <button type="submit" class="btn btn-primary btn-block btn-lg">抢答</button>
-      <img class="img-circle" type="submit" src="<?php echo assets_url('img/btn.jpg'); ?>" alt=".img-circle">
+      <!--<img class="img-circle" type="submit" src="<?php //echo assets_url('img/btn.jpg'); ?>" alt=".img-circle">-->
     </div>  
     <input type="hidden" id="hid_userid" name="userid" />
   </form>  
