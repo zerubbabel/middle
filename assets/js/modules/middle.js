@@ -121,7 +121,7 @@ function showAns(){
     if(q_index!=-1){
         question_ans=question=questions_collection[q_index][1];
         clearAns();
-        var html="<p class='ans'>"+question_ans+"</p>";
+        var html="<p class='ans' style='color:red'>"+question_ans+"</p>";
         $("#A_container").append(html);
     }
 }
@@ -177,6 +177,7 @@ function check_rush(){
         clearTeamBg();
         $("#"+r)[0].style["background-color"]="#1ff";
         $('#rush_modal').modal('hide');
+        $("#hid_userid").val(r);
     }
 }
 

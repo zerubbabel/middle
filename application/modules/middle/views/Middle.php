@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-sm-8 js-html-inspector" data-remove-target="p:first"> 
+    <div class="col-sm-6 js-html-inspector" data-remove-target="p:first"> 
     <form class="form-horizontal" role="form" rel="async" action="middle/middle_ajax/start_rush">        
     </form>
         <input  type="submit" class="btn btn-primary" value="开始抢答" id="start_rush" name="start_rush" />    
@@ -16,7 +16,7 @@
                 </div>          
         </div>
     </div>
-    <div class="col-sm-4 js-html-inspector" data-remove-target="p:first" id="right_div" style="display:none">
+    <div class="col-sm-6 js-html-inspector" data-remove-target="p:first" id="right_div" style="display:none">
         <form class="form-horizontal" role="form" rel="async" action="middle/middle_ajax/right">    
             <input  type="button" class="btn btn-primary" value="下一题" id="next" name="next">
             <input  type="button" class="btn btn-info" value="显示答案" id="showAns" name="showAns">
@@ -24,7 +24,7 @@
                 <input type="hidden" name="userid" value="" id="hid_userid"/> 
                 <input  type="submit" class="btn btn-success" value="回答正确" id="right" name="right">
             
-            <input  type="button" class="btn btn-danger" value="回答错误" id="wrong" name="wrong">
+            <!--<input  type="button" class="btn btn-danger" value="回答错误" id="wrong" name="wrong">-->
 
             <div class="panel panel-info">
                 <div class="panel-heading">答题</div>           
@@ -55,3 +55,4 @@
          </div>
       </div><!-- /.modal-content -->
 </div><!-- /.modal -->
+</div>
