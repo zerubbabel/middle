@@ -109,17 +109,11 @@ function right(point){
 }
 
 function start_rush(){
-
     var r=getAjax('start_rush');
-    showRushTeam();
-    
+    $('#rush_modal').modal();
+    clock=setInterval(check_rush,1000);    
 }
 
-function showRushTeam(){
-    //check_rush;
-    clock=setInterval(check_rush,1000);
-
-}
 function clearAns(){
     $(".ans").remove();
 }
@@ -144,7 +138,6 @@ function next(){
     }
 }
 function recount(ele){
-    debugger
     var userid=ele.id;
     var count = parseInt($('#'+userid).find('.badge').text());
     $('#'+userid).find('.badge').text(count + 1);
@@ -183,9 +176,11 @@ function check_rush(){
         stop();
         clearTeamBg();
         $("#"+r)[0].style["background-color"]="#1ff";
+        $('#rush_modal').modal('hide');
     }
 }
 
 function stop(){
     clearInterval(clock);
 }
+

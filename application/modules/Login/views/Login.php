@@ -32,7 +32,7 @@
 <div class="row" id="qd" style="display:none">
   <form class="form-horizontal" role="form" rel="async" action="login/login_ajax/rush">  
     <div class="text-center">
-      <button type="submit" class="btn btn-primary">抢答</button>
+      <button type="submit" class="btn btn-primary btn-block">抢答</button>
     </div>  
     <input type="hidden" id="hid_userid" name="userid" />
   </form>  

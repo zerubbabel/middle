@@ -37,3 +37,21 @@
     </div>
 </div>
 <input type="hidden" id="hid_select_team" value=0 /> 
+<div class="modal fade" id="rush_modal" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+         </div>
+         <div class="modal-body">
+            <h1 >开始抢答...</h1>
+         </div>
+         <div class="modal-footer">
+           
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->
