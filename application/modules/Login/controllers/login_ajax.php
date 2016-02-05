@@ -22,7 +22,6 @@ JS;
         $this->load->model('login_model');
         $userid=$this->input->get_post('userid');
         $r=$this->login_model->rush($userid);
-        var_dump($r);
         if($r)
         {
             $script="showResult(".$r.")";

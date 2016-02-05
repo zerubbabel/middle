@@ -31,11 +31,15 @@ class Login_model extends CI_Model {
             };
             $date=$data[0]['rush_time'];
             $id=$data[0]['id'];
-            var_dump($data);
+            //var_dump($data[0]['userid']);
             $r=false;
+            //$f=(strtotime(date('Y-m-d H:i:s'))>strtotime($date)) && ($data[0]['userid']==0);
+            
+            //var_dump(((strtotime(date('Y-m-d H:i:s'))>strtotime($date))&& (((int)$data[0]['userid'])==0)));
+            //return $r;
             //$flag=strtotime(date('Y-m-d H:i:s'))>strtotime($date);
             //var_dump($flag);
-            if ((strtotime(date('Y-m-d H:i:s'))>strtotime($date))&& ($data[0]['userid']==0)){
+            if ((strtotime(date('Y-m-d H:i:s'))>strtotime($date))&& (((string)$data[0]['userid'])=='0')){
                 //$this->userid=$userid;
                 $this->db->update('rush', array('userid'=>$userid), array('id' => $id));
                 $r=true;
